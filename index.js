@@ -17,7 +17,7 @@ function showRepositories() {
   function getRepositories() {
     const req = new XMLHttpRequest();
     req.addEventListener('load', showRepositories);
-    req.open('GET', 'https://api.themoviedb.org/3/movie/550?api_key=9033bb57fdf143daaceeae9a725493f2');
+    req.open('GET', 'https://api.github.com/users/octocat/repos');
     req.send();
   }
   function getCommits(el) {
